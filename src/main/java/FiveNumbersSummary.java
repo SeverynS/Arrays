@@ -25,7 +25,6 @@ public class FiveNumbersSummary {
         array[4] = scanner.nextInt();
 
         for(int i : array) {
-            if(i == 1)
                 sum += i;
         }
             System.out.println("Сумма введённых чисел - " + sum);
