@@ -4,7 +4,7 @@
 * сообщение об этом.
 * */
 
-public class SumOfMs {
+public class MultOfMs {
     public static void main(String[] args) {
         System.out.println(sumBySomth(5));
     }
@@ -12,15 +12,15 @@ public class SumOfMs {
     public static String sumBySomth(int somth) {
         String result;
         int[] arr = new int[]{5, 7, 10, 22, 8, 15};
-        int k = 0;
+        int k = 1;
         for (int i : arr) {
-            if (i % somth == 0)
-                k += i;
+            if (i > somth)
+                k *= i;
         }
         if (k != 0)
-            result = "The sum of digits divided by " + somth + " is: " + k;
+            result = "The multiplication of digits bigger then " + somth + " is: " + k;
         else
-            result = ("Divided by " + somth + " digits not found");
+            result = ("Bigger then " + somth + " digits not found");
 
         return result;
     }
