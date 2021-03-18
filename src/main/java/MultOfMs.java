@@ -17,7 +17,7 @@ public class MultOfMs {
             if (i > somth)
                 k *= i;
         }
-        if (k != 0)
+        if (k != 1)
             result = "The multiplication of digits bigger then " + somth + " is: " + k;
         else
             result = ("Bigger then " + somth + " digits not found");
